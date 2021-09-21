@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Assi8';
+
+  userName : string = "";
+  
+  // public msg : string = "";
+
+  // public msg1 : string = "Hello form Parent";
 }
