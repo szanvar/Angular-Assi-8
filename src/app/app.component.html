@@ -1,16 +1,28 @@
 <div style="text-align: center;">
      <h1> App Component </h1>
 
-    <!-- Angular-Assi-8-Q3 -->
+    <!-- Angular-Assi-8-Q1 -->
+    <!-- <app-child (str)="msg($event)"></app-child>
+    <h3> Getting data from Child component : {{userName}}</h3> -->
 
-    <!-- <input type="text" [(ngModel)]="userName">
-
-    <h3> {{"Data From App.ts File : " + userName }} </h3>
+    <!-- Angular-Assi-8-Q2 -->
+    <app-child [parentData]="msg2" (childData)="msg1=$event"></app-child>
+    <h3> {{"Message Child Component : "+ msg1}} </h3>
     
-    <h3> {{" and Length of String is : " + userName.length}} </h3> -->
 
-    <input #box (keyup)="$event">
-    <h3>{{"without using ngModel directive : " + box.value +" "+ box.value.length}}</h3>
+    <!-- Angular-Assi-8-Q3 -->
+    <!-- <input type="text" [(ngModel)]="name">
+
+    <h3> {{"Data From App.ts File : " + name }} </h3>
+    
+    <h3> {{" and Length of String is : " + name.length}} </h3> -->
+
+
+    <!-- Angular-Assi-8-Q4 -->
+    <!-- <input #box (keyup)="$event">
+    <h3>{{"without using ngModel directive : " + box.value}}</h3> -->
+
+
 </div>
 
 

@@ -9,8 +9,16 @@ export class AppComponent {
   title = 'Angular-Assi8';
 
   userName : string = "";
-  
-  // public msg : string = "";
+  msg(value :any)
+  {
+   return this.userName = value
+  }
 
+  msg1 :string = "";
+  msg2 :string = "Hello form Parent";  
+
+  name: string = "";
+  
+   
   // public msg1 : string = "Hello form Parent";
 }
